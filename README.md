@@ -1,0 +1,1 @@
+# SillyTavern-Auto-Theme-Switcher
