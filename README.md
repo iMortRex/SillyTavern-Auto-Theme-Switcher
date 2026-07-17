@@ -1,1 +1,2 @@
-# SillyTavern-Auto-Theme-Switcher
+# 自动深浅色主题切换
+获取手机深浅色自动切换主题
