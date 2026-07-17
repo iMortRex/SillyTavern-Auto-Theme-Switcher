@@ -1,0 +1,12 @@
+{
+    "display_name": "自动深浅色主题切换",
+    "loading_order": 1,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "",
+    "author": "Mort Rex",
+    "version": "1.0.0",
+    "homePage": "",
+    "auto_update": true
+}
