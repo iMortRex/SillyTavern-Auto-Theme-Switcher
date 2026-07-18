@@ -1,5 +1,5 @@
 import { extension_settings } from "../../../extensions.js";
-import { saveSettingsDebounced } from "../../../../script.js";
+import { saveSettingsDebounced, eventSource, event_types } from "../../../../script.js";
 import { executeSlashCommands } from "../../../slash-commands.js";
 
 const extensionName = "auto-theme-switcher";
@@ -221,6 +221,8 @@ jQuery(() => {
     setupUI();
     initColorSchemeListener();
     
-    // 去除延迟，直接执行一次初始检测
-    applyAutoTheme();
+    // 监听酒馆的 APP_READY 事件，在应用完全启动就绪时执行一次主题检测
+    eventSource.on(event_types.APP_READY, () => {
+        applyAutoTheme();
+    });
 });
